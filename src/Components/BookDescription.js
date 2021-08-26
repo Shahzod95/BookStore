@@ -19,27 +19,6 @@ const BookDescription = ({ id, user }) => {
       });
   }, [id]);
 
-  // const AddFavourite = () => {
-  //   axios({
-  //     method: "post",
-  //     url: `https://www.googleapis.com/books/v1/mylibrary/bookshelves/0/addVolume?volumeId=${id}&key=AIzaSyBq_nJdzbEL0O6CHgJh7O-t09kDaEyJ4V0`,
-  //     config: {
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //         // "Content-Length": "CONTENT_LENGTH",
-  //         Authorization: "104837311161212939432"
-  //       }
-  //     }
-  //   })
-  //     .then(function (response) {
-  //       //handle success
-  //       console.log(response);
-  //     })
-  //     .catch(function (response) {
-  //       //handle error
-  //       console.log(response);
-  //     });
-  // };
   return (
     <div className="description">
       {item.volumeInfo ? (
@@ -81,13 +60,13 @@ const BookDescription = ({ id, user }) => {
             <Link to="/">
               <Button>Go Back</Button>
             </Link>
-            {/* <Button onClick={AddFavourite}>Add Favourites</Button> */}
+           
           </Card.Body>
         </Card>
       ) : (
         "Loading!!!"
       )}
-      {/* hello */}
+      
     </div>
   );
 };

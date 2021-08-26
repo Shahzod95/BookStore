@@ -1,9 +1,7 @@
 import React from "react";
-//import BookDescription from "./BookDescription";
 import { Link } from "react-router-dom";
 import { Card, Button } from "react-bootstrap";
 const BooksGrid = ({ book, setId }) => {
-  //const [click, setClick] = useState(false);
   return (
     <div className="row">
       <p className="explore">Explored Searches</p>

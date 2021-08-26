@@ -28,7 +28,6 @@ const Login = () => {
   const handleLogin = async () => {
     try {
       const { email, password } = user;
-      // await auth.setPersistence('session');
       const authenticatedUser = await auth.signInWithEmailAndPassword(email, password);
       console.log(authenticatedUser);
     } catch (error) {

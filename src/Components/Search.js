@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { InputGroup, Button, FormControl } from "react-bootstrap";
-const Search = ({ query, setQuery }) => {
+const Search = ({ setQuery }) => {
   const [input, setInput] = useState("");
   const onClick = (e) => {
     e.preventDefault();
@@ -8,18 +8,7 @@ const Search = ({ query, setQuery }) => {
     setInput("");
   };
   return (
-    // <form>
-    //   <input
-    //     type="text"
-    //     placeholder="Search your book by title, author name or any keyword...."
-    //     onChange={(e) => setInput(e.target.value)}
-    //     value={input}
-    //     className="search-input"
-    //   />
-    //   <button type="submit" onClick={onClick}>
-    //     Search
-    //   </button>
-    // </form>
+ 
     <InputGroup className="mb-3">
       <FormControl
         className="input"

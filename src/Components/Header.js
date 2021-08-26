@@ -27,7 +27,6 @@ const Header = ({ query, setQuery }) => {
       <Avatar src="/broken-image.jpg" /*onClick={SignOut}*/ />
       <div className="header">
         <div className="heading">
-          {/* <button onClick={SignOut}>Sign out</button> */}
           <h1>
             Let's go
             <br /> to the world of imagination!!
