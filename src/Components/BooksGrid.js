@@ -6,7 +6,7 @@ const BooksGrid = ({ book, setId }) => {
     <div className="row">
       <p className="explore">Explored Searches</p>
       {book.map((novel) => (
-        <div className="col-sm-12 col-lg-4 col-md-6 col-grid" key={novel.id}>
+        <div className="col-sm-12 col-lg-3 col-md-6 col-grid" key={novel.id}>
           <Card className="card h-100">
             <Card.Img
               variant="top"
